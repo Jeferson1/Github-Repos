@@ -83,8 +83,7 @@ function getGithubUserRepo(){
     axios.get(`https://api.github.com/users/${inputValue}/repos`)
     .then(function(response){
         const githubRep = response
-        console.log(githubRep)
-
+        
         const listElementRepos = document.createElement('ul')
         
         repos.appendChild(listElementRepos)
